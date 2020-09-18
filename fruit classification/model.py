@@ -2,7 +2,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class FNet(nn.Module):
-    # Extra TODO: Comment the code with docstrings
     """Fruit Net
 
     """
