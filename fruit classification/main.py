@@ -27,15 +27,9 @@ def train_model(dataset_path, debug=False, destination_path='', save=False):
 		loss (torch.tensor): Train loss and validation loss.
 		accuracy (torch.tensor): Train accuracy and validation accuracy.
 	"""
-	# Write your code here
-	# The code must follow a similar structure
-	# NOTE: Make sure you use torch.device() to use GPU if available
 
     # device configuration
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-
-    #dataset_path='E:\E-Yantra\2018-19\Task 1\Task 1B\Data\fruits'
-    #destination_path = dataset_path
 
     df, df_train, df_test = dataset.create_and_load_meta_csv_df(dataset_path=dataset_path, destination_path=destination_path, randomize=True, split=0.8)
 
