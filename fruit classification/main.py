@@ -1,5 +1,3 @@
-
-# Homecoming (eYRC-2018): Task 1B
 # Fruit Classification with a CNN
 
 from model import FNet
